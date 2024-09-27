@@ -1,0 +1,22 @@
+<html>
+    <body>
+      <link rel="stylesheet" href="style.css">
+     <h1>Hari ini Pendidikan Agama nih</h1>
+      <center><img src="Stiker 32.gif" height="300" width="400"></center>
+    
+      <h2>Bolehkah saya melihat jawaban anda?</h2>
+      <center><a href="https://api.whatsapp.com/send/?phone=%2B6283136604255&text&type=phone_number&app_absent=0"><button id="btn_boleh">boleh</button>&nbsp;</a>
+      <button id="btn_ga" onclick="ga(this)" style="position: absolute">
+        ga</center>
+      </button>
+    </body>
+    <script>
+      function ga(id) {
+        var mau = document.getElementById("btn_boleh");
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        id.style.left = i + "px";
+        id.style.top = j + "px";
+      }
+    </script>
+  </html> 
